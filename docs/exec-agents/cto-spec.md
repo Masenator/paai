@@ -72,5 +72,7 @@ Pulled from current project status — first engineering priorities:
 | Date | Decision | Rationale |
 |---|---|---|
 | 2026-09-12 | Repo initialised, docs-first, no code yet | Capture Make.com-built state before iterating further |
+| 2026-09-14 | Evaluated code-first/n8n migration vs. Make.com; decided to stay on Make.com pre-launch, with disciplined blueprint export/versioning as the near-term mitigation | Revisit only if: a second technical person joins, Make's per-op cost becomes real, logic needs branching Make can't express, an incident traces to an unreviewable change, or compliance needs an automated audit trail |
+| 2026-09-14 | Added `app/` as a local dev sandbox (mocked Airtable/Gemini/360dialog, code I can read/test/diff) alongside — not instead of — the production Make.com scenario | Gives a code-first environment for prototyping/testing pipeline logic without re-platforming production; stays consistent with "hold on Make until a real limitation forces a move" |
 
 _Add an entry whenever a non-trivial technical call is made — vendor swap, architecture change, standard adopted/dropped._

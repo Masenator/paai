@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Post All About It — Pipeline Sandbox</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Post All About It — Pipeline Sandbox</h1>
+    <p class="subtitle">Local dev version of the Make.com scenario: Airtable → Gemini → 360dialog</p>
+    <div id="modeBar" class="mode-bar"></div>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>1. Contacts (Airtable)</h2>
+      <table id="contactsTable">
+        <thead>
+          <tr><th>Name</th><th>Phone</th><th>Topic</th><th>Last contacted</th><th></th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section class="panel">
+      <h2>2. Run pipeline</h2>
+      <div id="selectedContact" class="muted">Select a contact above to begin.</div>
+      <div class="log" id="log"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
